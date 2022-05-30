@@ -39,7 +39,11 @@
     <header>
       <figure>
         <a href="index.html">
-          <img src="./public/fgy-logo4.png" alt="Trulli" class="header-logo" />
+          <img
+            src="./public/fgy-logo4.png"
+            alt="Logó - egy rajzolt csapó"
+            class="header-logo"
+          />
         </a>
       </figure>
       <nav id="navbar">
@@ -49,6 +53,99 @@
         <a href="comments.html">Vélemények</a>
       </nav>
     </header>
-    Vélemények
+    <section class="hero-secondary">
+      <div class="hero-secondary-title">
+        <h1>Mondd el a véleményed! Ha van.</h1>
+      </div>
+      <aside>
+        <h1>A legjobb filmgyűjtemény</h1>
+        <p>
+          Filmek, amiket már láttam, és amiket még nem, de meg akarok nézni.
+        </p>
+      </aside>
+    </section>
+
+    <form name="myform" id="myform">
+      <div class="form-group">
+        <label for="name">Név</label>
+        <input
+          type="text"
+          id="name"
+          name="user_name"
+          required
+          maxlength="150"
+        />
+      </div>
+      <div class="form-group">
+        <label for="mail">Email</label>
+        <input type="email" id="email" name="user_email" maxlength="250" />
+      </div>
+      <div class="form-group">
+        <label for="msg">Vélemény</label>
+        <textarea
+          id="msg"
+          name="user_message"
+          required
+          maxlength="1000"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <p>Ezzel kapcsolatban írok</p>
+        <div>
+          <input type="radio" id="film" name="subject" value="film" />
+          <label for="film">Film</label>
+          <input type="radio" id="egyeb" name="subject" value="egyeb" />
+          <label for="egyeb">Egyéb</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>Védettségi igazolványom</p>
+        <div>
+          <input type="radio" id="van" name="subject" value="van" />
+          <label for="van">Van</label>
+          <input type="radio" id="nincs" name="subject" value="nincs" />
+          <label for="nincs">Nincs</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>Ki láthatja az üzenetem</p>
+        <div>
+          <input type="radio" id="barki" name="subject" value="barki" />
+          <label for="barki">Bárki</label>
+          <input type="radio" id="csak-te" name="subject" value="csak-te" />
+          <label for="csak-te">Csak te</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div>
+          <input type="checkbox" id="legal" name="legal" value="accept" />
+          <label for="legal">Az adatvédelmi irányelveket elfogadom</label><br />
+        </div>
+      </div>
+      <div class="form-control-group">
+        <button type="submit" class="submit-button">Beküldés</button>
+        <button type="reset">Alaphelyzet</button>
+      </div>
+    </form>
+
+    <div id="comment-section"></div>
+
+    <footer>
+      <figure>
+        <a href="index.html">
+          <img
+            src="./public/fgy-logo4.png"
+            alt="Logó - egy rajzolt csapóx"
+            class="header-logo"
+          />
+        </a>
+      </figure>
+      <div class="legal">
+        <a href="./public/Adatvédelmi-szabalyzat.pdf" target="_blank"
+          ><p>Adatvédelmi szabályzat</p></a
+        >
+      </div>
+    </footer>
   </body>
 </html>
